@@ -15,4 +15,5 @@
     <context:component-scan base-package="cq.*"></context:component-scan>
     <context:annotation-config/>
     <import resource="classpath*:spring_mapper.xml"></import>
+    <!--<import resource="spring-tx.xml"></import>-->
 </beans>

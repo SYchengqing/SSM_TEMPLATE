@@ -4,6 +4,6 @@
 
 <mapper namespace="cq.mapper.AccountMapper">
     <update id="updateAccount">
-        update scott.account set money = money + #{param2} where id = #{param1}
+        update account set money = money + #{param2} where id = #{param1}
     </update>
 </mapper>

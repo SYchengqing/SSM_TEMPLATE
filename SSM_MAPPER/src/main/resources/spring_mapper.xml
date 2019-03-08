@@ -8,16 +8,16 @@
         http://www.springframework.org/schema/context/spring-context.xsd
 ">
     <context:property-placeholder
-            location="classpath:oracledb.properties" />
+            location="classpath:mysqldb.properties" />
 
     <!-- 配置数据源 -->
     <bean id="dataSource"
-          class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+          class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="driverClassName"
                   value="${driverClassName}" />
         <property name="url" value="${url}" />
-        <property name="username" value="scott" />
-        <property name="password" value="tigger" />
+        <property name="username" value="root" />
+        <property name="password" value="root" />
     </bean>
 
     <bean id="sqlSessionFactory"
