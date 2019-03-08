@@ -7,8 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SSM_MAPPER" />
+        <module name="SSM_MVC" />
         <module name="SSM_SERVICE" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SSM_WEB" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

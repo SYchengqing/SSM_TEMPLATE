@@ -16,7 +16,7 @@ public class AccountServiceImpl implements AccountService {
 
     public void transfer(int from, int to, double money) {
         updateAcocunt(from,money);
-        System.out.println(1/0);
+//        System.out.println(1/0);
         updateAcocunt(to,-money);
     }
 

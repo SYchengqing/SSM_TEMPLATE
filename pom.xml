@@ -11,6 +11,8 @@
     <modules>
         <module>SSM_MAPPER</module>
         <module>SSM_SERVICE</module>
+
+        <module>SSM_MVC</module>
     </modules>
     <dependencies>
         <dependency>
