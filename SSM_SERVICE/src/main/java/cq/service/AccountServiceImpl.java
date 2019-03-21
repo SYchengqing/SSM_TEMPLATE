@@ -7,6 +7,7 @@ import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class AccountServiceImpl implements AccountService {
@@ -20,7 +21,15 @@ public class AccountServiceImpl implements AccountService {
         updateAcocunt(to,-money);
     }
 
-    public void updateAcocunt(int id,double money) {
+    public List<Account> getAccount() {
+        return accountMapper.seletAccount();
+    }
+
+    public Account getAccount(int id, String name) {
+        return accountMapper.selectOneAccount(id,name);
+    }
+
+    public void updateAcocunt(int id, double money) {
 
         accountMapper.updateAccount(id, money);
 
